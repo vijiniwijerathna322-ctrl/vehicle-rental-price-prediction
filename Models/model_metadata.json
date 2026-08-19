@@ -1,0 +1,52 @@
+{
+    "project_name": "Vehicle Rental Price Prediction",
+    "model_name": "Tuned Gradient Boosting",
+    "target_column": "daily_rate",
+    "reference_year": 2020,
+    "random_state": 42,
+    "input_features": [
+        "fuel_type",
+        "rating",
+        "renter_trips_taken",
+        "location_latitude",
+        "location_longitude",
+        "location_state",
+        "vehicle_make",
+        "vehicle_type",
+        "has_rating",
+        "vehicle_age"
+    ],
+    "numerical_features": [
+        "rating",
+        "renter_trips_taken",
+        "location_latitude",
+        "location_longitude",
+        "has_rating",
+        "vehicle_age"
+    ],
+    "categorical_features": [
+        "fuel_type",
+        "location_state",
+        "vehicle_make",
+        "vehicle_type"
+    ],
+    "performance": {
+        "mae": 32.4287,
+        "rmse": 72.8519,
+        "r2": 0.3838
+    },
+    "best_hyperparameters": {
+        "subsample": 0.9,
+        "n_estimators": 500,
+        "min_samples_split": 10,
+        "min_samples_leaf": 2,
+        "max_depth": 3,
+        "learning_rate": 0.1
+    },
+    "library_versions": {
+        "pandas": "2.2.2",
+        "numpy": "2.0.2",
+        "scikit_learn": "1.6.1",
+        "joblib": "1.5.3"
+    }
+}

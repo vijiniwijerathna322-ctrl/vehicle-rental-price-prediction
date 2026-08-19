@@ -1,0 +1,17 @@
+﻿# Python environments and cache
+venv/
+__pycache__/
+*.py[cod]
+
+# Secrets and local Streamlit settings
+.streamlit/secrets.toml
+.env
+
+# Editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Unrelated design reference
+Dashboard/example.py
